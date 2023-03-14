@@ -1,0 +1,18 @@
+.Timer {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #B7B7B7;
+  cursor: default;
+
+  opacity: .5;
+  transition: .2s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+.Loader {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin: 75px auto 0;
+  opacity: 0;
+  z-index: -1;
+  transition: .1s ease-in-out;
+
+  &.active {
+    animation: rotate 1s linear infinite;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

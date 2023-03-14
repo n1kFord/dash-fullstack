@@ -1,0 +1,151 @@
+.Navbar {
+  width: 100%;
+  height: 60px;
+  padding: 0 63px 0 0;
+  display: flex;
+  align-items: center;
+  background: #242424;
+  box-shadow: 0 4px 6px rgba(27, 27, 27, 0.25);
+  z-index: 10;
+
+  &__logo {
+    height: 100%;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #2d2d2d;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #DFDFDF;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin-left: 85px;
+
+    &__link {
+      margin: 4px 0 0 33px;
+      padding-bottom: 4px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #B9B9B9;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.disabled {
+        color: #484848;
+        cursor: default;
+        transition: none;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.active {
+        color: #D8D8D8;
+        border-bottom: 1px solid #3E3E3E;
+      }
+    }
+  }
+
+  &__auth {
+    margin-left: auto;
+    display: flex;
+
+    &__link {
+      margin-left: 15px;
+      width: 99px;
+      padding: 8px 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #BABABA;
+      background: #1c1c1c;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:active {
+        opacity: .6;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__container {
+      display: flex;
+      padding-right: 15px;
+      border-right: 1px solid #383838;
+    }
+
+    &__account {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        opacity: .6;
+      }
+    }
+
+    &__logout {
+      margin-left: 18px;
+      padding: 5px 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #e0e0e0;
+      background: #3a3a3a;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

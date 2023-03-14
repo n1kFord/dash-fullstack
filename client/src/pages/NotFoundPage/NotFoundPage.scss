@@ -1,0 +1,86 @@
+.NotFoundPage {
+  &__container {
+    position: relative;
+
+    width: 600px;
+    height: 200px;
+    margin: 200px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      opacity: .2;
+      background-image: conic-gradient(transparent, transparent, transparent, #bbbbbb);
+      animation: animate 4s linear infinite;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      opacity: .1;
+      background-image: conic-gradient(transparent, transparent, transparent, #ececec);
+      animation: animate 4s linear infinite;
+      animation-delay: -2s;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__overlay {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    color: #bdbdbd;
+    cursor: default;
+  }
+
+  &__button {
+    margin: 50px auto 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    background-color: transparent;
+    color: #bdbdbd;
+    transition: .2s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

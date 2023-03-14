@@ -1,0 +1,67 @@
+.Main {
+  &__container {
+    width: 100%;
+    max-width: 571px;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+      width: 154px;
+      height: 41px;
+      margin: 53px auto 0;
+      background: #1C1C1C;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #DADADA;
+
+      outline: none;
+      border: none;
+
+      cursor: pointer;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &.disabled {
+        opacity: .8;
+        color: #bebebe;
+        cursor: default;
+      }
+    }
+  }
+
+  &__board {
+    position: relative;
+    margin: 40px auto 0;
+    padding: 11px;
+    width: 571px;
+    height: 571px;
+    background: #1C1C1C;
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.31);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 11px;
+
+    &__block {
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: #1C1C1C;
+    }
+  }
+}
