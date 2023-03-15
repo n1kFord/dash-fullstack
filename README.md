@@ -25,7 +25,7 @@ Backend written on **Nodejs Express** and using *MongoDB*. There is support for 
 
 in root directory: 
 
-1. `npm i` (for local run)
+1. `npm i` (to run locally in the future)
 2. ``docker-compose up -d`` and ``docker compose down``
 
 To Visit App:
